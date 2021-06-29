@@ -22,9 +22,34 @@
   * https://www.oracle.com/java/technologies/javase-jdk8-doc-downloads.html
 
 <br/>
+
 # 자바프로그램 작성 (1)
 * cd ___ : 현재 디렉토리에서 다른 디렉토리로 이동할때.
 * dir : 현재 폴더에 있는 파일을 모두 보여줌.
 * type ___ : 파일에 내용을 알려줌
   * 이진법 파일(Hello.class) : 사람이 알아볼 수 없는 파일 내용
   * 텍스트 파일(Hello.java) : 사람이 알아볼 수 있는 파일 내용
+<br/>
+
+* javac.exe(자바 컴파일러) : 사람이 작성한 문장을 기계어로 번역
+  * 소스파일(.java)을 클래스 파일(.class)로 변환.
+* java.exe(자바 인터프리터) : 자바 프로그램(클래스 파일)을 실행
+<br/>
+
+* # 소스파일의 구성 - 클래스(class) 와 메서드(main)
+  * 클래스(class) - 자바 프로그램의 단위
+    * 자바 프로그램은 클래스들로 구성
+<br/>
+
+    class 클래스 이름 {      <---클래스의 시작
+    <br/>
+    }     <---클래스의 끝 
+<br/>
+
+  * 메서드(main) - 자바 프로그램의 시작점. 이 메서드 없이 실행 불가
+<br/>
+
+    class 클래스 이름 {
+    public static void main(String[] args) {     <---메서드의 시작
+    }    <---메서드의 끝
+    }
