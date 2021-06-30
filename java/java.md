@@ -53,5 +53,67 @@
     public static void main(String[] args) {     <---메서드의 시작
     }    <---메서드의 끝
     }
-    
+<br/>
+
+# 본격!! 자바 이클립스 사용하기
+* 자바 단축키
+  *  ctrl + shift + L : 단축키 목록 보기 
+  *  trl + S : 저장
+  *  ctrl + F11 : 실행
+  *  trl + A : 전체 선택
+  *  ctrl + D : 한 줄 삭제
+  *  trl + delete : 다음 단어 삭제
+  *  ctrl + +, - 또는 ctrl + shift +, - : 편집창 폰트 크기
+  *  ctrl + space : 자동 완성
+  *  alt + ctrl + shift + ⇧, ⇩ : 행 복사(여러 행 가능)
+
+* 주석달기의 주의점
+  *  문자열을 의미하는 큰따옴표(“”) 안에 주석이 있을 때는 주석이 아닌 문자열로 인식된다는 것이다.
+```
+class Hello
+{
+ public static void main(String[] args) 
+ { 
+ System.out.println("Hello, /* 이것은 주석 아님 */ world."); 
+ System.out.println("Hello, world. // 이것도 주석 아님"); 
+ }
+}
+```
+* 화면에 글자 출력
+  * 화면에 글자를 출력할 때는 System.out.print(출력하고자하는 내용 입력)
+  * “ ” 안에 넣은 내용은 글자로 간주 (단어로 입력됨)
+```
+System.out.print("Hello, world"); // 화면에 Hello, world를 출력
+System.out.print(3+5); // 화면에 8을 출력
+System.out.print("3+5"); // 화면에 3+5를 출력
+```
+
+* System.out.print( ) 과 System.out.println( ) 의 차이
+```
+System.out.print() 괄호 안의 내용을 출력하고 줄바꿈을 하지 않는다.
+System.out.println() 괄호 안의 내용을 출력하고 줄바꿈을 한다.
+```
+
+# 변수
+
+* 변수란?
+  * 하나의 값을 저장할 수 있는 저장공간
+* 변수를 선언하는 방법
+  * 변수타입 변수이름; // 반드시 끝에는 ";"를 붙여야 한다!!
+```
+int x; // 정수(integer)를 저장하기 위한 변수 x를 선언
+x = 5; // 변수 x에 5를 저장
+```
+
+* 변수의 타입
+  * 정수 : int
+  * 실수 : pi
+  * 문자 : ch
+  * 여라문자 : str
+```
+int x = 100; // 정수(integer)를 저장할 변수의 타입은 int로 한다.
+double pi = 3.14; // 실수를 저장할 변수의 타입은 double로 한다.
+char ch = 'a'; // 문자(1개)를 저장할 변수의 타입은 char로 한다.
+String str = "abc"; // 여러 문자(0~n개)를 저장할 변수의 타입은 String으로 한다
+```
 
