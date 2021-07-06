@@ -213,14 +213,25 @@ char ch = ' '; // OK. 공백 문자(blank)로 변수 ch를 초기화
   * 8개의 기본형을 제외한 나머지 타입
   *  ex) string, system, today 
  
-# 기본형의 종류와 크기
+# 기본형의 종류와 크기 
 
-종류/크기 <br/>    1    2    4    6
+* #### byte
+  * 1 bit = 2진수 한 자리
+  * 1 byte = 8 bit
 
-논리형 <br/>    boolen 
+* #### byte의 크기
+  * 크기는 2배씩 커진다
+  *  1 - 2 - 4 - 8
 
-문자형 <br/>
-
-정수형 <br/>
-
-실수형 <br/>
+* 논리형 
+  * 1byte boolean     
+* 문자형
+  * 2byte char
+* 정수형
+  * 1byte byte
+  * 2byte short
+  * 4byte int
+  * 8byte long
+* 실수형
+  * 4byte float
+  * 8byte double 
